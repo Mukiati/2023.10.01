@@ -61,7 +61,7 @@ namespace _2023._10._01
             button2.Click += (s, e) =>
             {
 
-                if (listBox1.SelectedIndex >0)
+                if (listBox1.SelectedIndex >=0)
                 {
                     db.delete(pekaruk.pekaruks[index]);
                     listBox1.Items.RemoveAt(index);
